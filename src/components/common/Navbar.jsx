@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext'; // Actualizamos la ruta
 import { FaHome, FaSignInAlt, FaUserPlus, FaShoppingCart, FaUserCog, FaSignOutAlt } from 'react-icons/fa';
 import './Navbar.css';
 

@@ -59,7 +59,31 @@ const Footer = () => {
             </p>
           )}
         </div>
-        <p>© 2025 Desarrollador | Roberto Gaona</p>
+        <div className="footer-section">
+          <h3>Acerca de</h3>
+          <ul className="footer-links">
+            <li><a href="/about">Nuestra Historia</a></li>
+            <li><a href="/contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Ayuda</h3>
+          <ul className="footer-links">
+            <li><a href="/faq">Preguntas Frecuentes</a></li>
+            <li><a href="/shipping">Envíos</a></li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3>Síguenos</h3>
+          <div className="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; 2025 |Roberto Gaona. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

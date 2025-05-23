@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 import { Link, useNavigate } from 'react-router-dom';
-import './Cart.css';
+import '../../styles/components/cart.css';  // Actualizada la ruta del CSS
 
 const Cart = () => {
   const { 

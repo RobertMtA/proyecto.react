@@ -1,26 +1,25 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import { CartProvider } from './context/CartContext'; // Asegúrate del nombre correcto
+import { CartProvider } from './context/CartContext';
 import { LoadingProvider } from './context/LoadingContext';
-import Navbar from './components/Navbar';
+import Navbar from './components/common/Navbar';
 import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
 import Contact from './components/Contact';
-import Cart from './components/Cart';
-import ProductDetail from './components/ProductDetail';
+import Cart from './components/cart/Cart';
+import ProductDetail from './components/products/ProductDetail';
 import Collections from './components/Collections';
 import BabyBear from './components/BabyBear';
 import BearAndBunny from './components/BearAndBunny';
 import EricDesigns from './components/EricDesigns';
 import AdminPanel from './components/AdminPanel';
-import Footer from './components/Footer';
-import TestComponent from './components/TestComponent'; // Asegúrate de importar el componente
+import Footer from './components/common/Footer';
 import Checkout from './components/Checkout';
-import PrivateRoute from './components/PrivateRoute';
+import PrivateRoute from './auth/PrivateRoute';
 import NotFound from './components/NotFound';
-import Loading from './components/Loading';
+import Loading from './components/ui/Loading';
 import ErrorMessage from './components/ErrorMessage';
 
 function App() {
@@ -37,6 +36,7 @@ function App() {
           <CartProvider>
             <div className="app-wrapper" style={{ minHeight: '100vh' }}>
               <Navbar />
+              <Loading />  {/* Asegúrate de que el componente esté incluido aquí */}
               <ErrorMessage />
               <main className="main-content" style={{ flex: 1 }}>
                 <Routes>
