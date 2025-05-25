@@ -1,10 +1,8 @@
-import React from 'react';
-// Removemos la importación de Navbar ya que está en App.jsx
-import HeroBanner from './HeroBanner';
-import FeaturedProducts from './FeaturedProducts';
-import Collections from './Collections';
+import React from "react";
+import HeroBanner from "../components/HeroBanner";
+import FeaturedProducts from "../components/FeaturedProducts";
+import Collections from "./Collections";
 import Contact from './Contact';
-
 import './Home.css';
 
 const Home = () => {

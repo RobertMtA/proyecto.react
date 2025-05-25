@@ -4,30 +4,32 @@ import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import { LoadingProvider } from './context/LoadingContext';
 import Navbar from './components/common/Navbar';
-import Home from './components/Home';
-import Register from './components/Register';
-import Login from './components/Login';
-import Contact from './components/Contact';
-import Cart from './components/cart/Cart';
-import ProductDetail from './components/products/ProductDetail';
-import Collections from './components/Collections';
-import BabyBear from './components/BabyBear';
-import BearAndBunny from './components/BearAndBunny';
-import EricDesigns from './components/EricDesigns';
-import AdminPanel from './components/AdminPanel';
 import Footer from './components/common/Footer';
-import Checkout from './components/Checkout';
-import PrivateRoute from './auth/PrivateRoute';
-import NotFound from './components/NotFound';
 import Loading from './components/ui/Loading';
 import ErrorMessage from './components/ErrorMessage';
+
+// Page imports
+import Home from './pages/Home';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Contact from './pages/Contact';
+import Cart from './pages/Cart';
+import ProductDetail from './pages/ProductDetail';
+import Collections from './pages/Collections';
+import BabyBear from './pages/BabyBear';
+import BearAndBunny from './pages/BearAndBunny';
+import EricDesigns from './pages/EricDesigns';
+import AdminPanel from './pages/AdminPanel';
+import Checkout from './pages/Checkout';
+import NotFound from './pages/NotFound';
+
+// Auth
+import PrivateRoute from './auth/PrivateRoute';
 
 function App() {
   useEffect(() => {
     console.log('App mounted');
   }, []);
-
-  console.log('App rendering');
 
   return (
     <Router>
@@ -36,7 +38,7 @@ function App() {
           <CartProvider>
             <div className="app-wrapper" style={{ minHeight: '100vh' }}>
               <Navbar />
-              <Loading />  {/* Asegúrate de que el componente esté incluido aquí */}
+              <Loading />
               <ErrorMessage />
               <main className="main-content" style={{ flex: 1 }}>
                 <Routes>
@@ -59,7 +61,6 @@ function App() {
                     } 
                   />
                   <Route path="/checkout" element={<Checkout />} />
-                  {/* Ruta NotFound - debe ir al final */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>

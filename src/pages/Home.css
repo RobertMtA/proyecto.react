@@ -1,0 +1,243 @@
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.featured-section,
+.collections-section,
+.contact-section {
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.featured-section h2,
+.collections-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #DC4C64;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.featured-section {
+  background-color: #DC4C64;
+  padding: 3rem 0;
+  border-radius: 8px;
+}
+
+.collections-section {
+  background-color: #332D2D;
+}
+
+.contact-section {
+  background-color: #E4A11B;
+  padding: 4rem 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .featured-section,
+  .collections-section,
+  .contact-section {
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+
+  .featured-section h2,
+  .collections-section h2 {
+    font-size: 2rem;
+  }
+}
+/* Home.css */
+.home-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Estilos para todas las secciones */
+.featured-section,
+.collections-section,
+.contact-section {
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Títulos de sección */
+.featured-section h2,
+.collections-section h2,
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.featured-section h2::after,
+.collections-section h2::after,
+.contact-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Sección Featured */
+.featured-section {
+  background: linear-gradient(135deg, #ff2d75 0%, #ff5e9a 100%);
+  color: white;
+}
+
+.featured-section h2 {
+  color: white;
+}
+
+.featured-section h2::after {
+  background: white;
+}
+
+/* Sección Collections */
+.collections-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #332D2D 100%);
+  color: white;
+}
+
+.collections-section h2 {
+  color: #ffeb3b;
+}
+
+.collections-section h2::after {
+  background: #ffeb3b;
+}
+
+/* Sección Contact */
+.contact-section {
+  background: linear-gradient(135deg, #E4A11B 0%, #ffcc00 100%);
+  color: #332D2D;
+}
+
+.contact-section h2 {
+  color: #332D2D;
+}
+
+.contact-section h2::after {
+  background: #ff2d75;
+}
+
+/* Efectos hover para secciones */
+.featured-section:hover,
+.collections-section:hover,
+.contact-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Efectos decorativos */
+.featured-section::before,
+.collections-section::before,
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: rotate 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Contenido de secciones (para posicionar sobre el efecto decorativo) */
+.section-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 1200px) {
+  .home-container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .featured-section,
+  .collections-section,
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .featured-section h2,
+  .collections-section h2,
+  .contact-section h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    gap: 3rem;
+  }
+  
+  .featured-section,
+  .collections-section,
+  .contact-section {
+    padding: 2.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .featured-section h2,
+  .collections-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-section h2,
+  .collections-section h2,
+  .contact-section h2 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+  }
+  
+  .featured-section h2::after,
+  .collections-section h2::after,
+  .contact-section h2::after {
+    width: 80px;
+    height: 3px;
+  }
+}

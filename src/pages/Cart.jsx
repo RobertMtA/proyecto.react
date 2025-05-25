@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from 'react';
-import { CartContext } from '../../context/CartContext';
-import { Link, useNavigate } from 'react-router-dom';
-import '../../styles/components/cart.css';  // Actualizada la ruta del CSS
+import React, { useContext, useEffect } from "react";
+import { CartContext } from "../context/CartContext";
+import { Link, useNavigate } from "react-router-dom";
+import './cart.css';
 
 const Cart = () => {
   const { 
@@ -41,7 +41,7 @@ const Cart = () => {
                   alt={item.name} 
                   className="cart-item-image"
                   onError={(e) => {
-                    e.target.src = '/img/placeholder.jpg'; // Imagen de respaldo
+                    e.target.src = 'img/oversizedfrenteericknegra.jpg'; // Imagen de respaldo
                   }}
                 />
                 
