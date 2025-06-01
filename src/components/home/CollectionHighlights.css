@@ -1,0 +1,79 @@
+.collection-highlights-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for the section */
+}
+
+.collection-highlights-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.featured-collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-highlight-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.collection-highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.collection-highlight-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.collection-highlight-content {
+  padding: 1rem;
+  flex-grow: 1; /* Allow content to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space */
+}
+
+.collection-highlight-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.collection-highlight-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Allow paragraph to take space */
+}
+
+.view-collection-btn-highlight {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Center button */
+}
+
+.view-collection-btn-highlight:hover {
+  background-color: #0056b3;
+}

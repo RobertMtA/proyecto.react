@@ -1,0 +1,51 @@
+.contact-snippet-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff; /* White background for this section */
+  border-top: 1px solid #eee;
+}
+
+.contact-snippet-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.contact-snippet-intro {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.contact-snippet-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact-snippet-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.contact-snippet-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-snippet-button:hover {
+  background-color: #218838;
+}

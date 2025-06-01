@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './context/Authcontext';
 import { CartProvider } from './context/CartContext';
 import { LoadingProvider } from './context/LoadingContext';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Loading from './components/ui/Loading';
-import ErrorMessage from './components/ErrorMessage';
+import ErrorMessage from './components/ui/ErrorMessage';
 
 // Page imports
 import Home from './pages/Home';

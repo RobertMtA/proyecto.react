@@ -1,8 +1,8 @@
 import React from "react";
-import HeroBanner from "../components/HeroBanner";
-import FeaturedProducts from "../components/FeaturedProducts";
-import Collections from "./Collections";
-import Contact from './Contact';
+import HeroBanner from "../components/home/HeroBanner";
+import FeaturedProducts from "../components/products/FeaturedProducts";
+import CollectionHighlights from "../components/home/CollectionHighlights";
+import ContactSnippet from "../components/home/ContactSnippet";
 import './Home.css';
 
 const Home = () => {
@@ -14,11 +14,11 @@ const Home = () => {
           <h2>Productos Destacados</h2>
           <FeaturedProducts />
         </section>
-        <section className="collections-section">
-          <Collections />
+        <section className="collections-section"> {/* Keep existing class if Home.css uses it for spacing etc. */}
+          <CollectionHighlights />
         </section>
-        <section className="contact-section">
-          <Contact />
+        <section className="contact-section"> {/* Keep existing class */}
+          <ContactSnippet />
         </section>
       </main>
     </div>
